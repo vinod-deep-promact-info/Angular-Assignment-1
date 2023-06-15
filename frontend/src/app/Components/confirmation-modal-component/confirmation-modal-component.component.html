@@ -1,0 +1,17 @@
+<!-- Confirmation Modal -->
+<div class="modal" [ngClass]="{ 'is-active': showDeleteConfirmation }">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Confirm Delete</p>
+      <button class="delete" aria-label="close" (click)="cancelDelete()"></button>
+    </header>
+    <section class="modal-card-body">
+      <p>Are you sure you want to delete {{ selectedEmployee?.name }}?</p>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-danger" (click)="deleteEmployee()">Yes</button>
+      <button class="button" (click)="cancelDelete()">No</button>
+    </footer>
+  </div>
+</div>

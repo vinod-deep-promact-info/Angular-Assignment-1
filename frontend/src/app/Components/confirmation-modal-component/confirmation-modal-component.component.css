@@ -1,0 +1,13 @@
+*{
+  color: black;
+  z-index: 111;
+}
+
+.pop{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+
+}
